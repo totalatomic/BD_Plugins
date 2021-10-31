@@ -11,7 +11,7 @@
  */
 Patcher = BdApi.Patcher
 ReactDOM = BdApi.ReactDOM
-const dashRegExp = new RegExp("-", "g")
+const dashRegExp = new RegExp(/[^\w\s]/, "gi")
 module.exports = class DashToSpaceInChannelName{
 
     start() {
